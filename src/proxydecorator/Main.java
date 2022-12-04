@@ -13,25 +13,25 @@ public class Main {
         }
 
         try {
-            pessoaDAO.addPessoa("Teste", 12);
+            pessoaDAO.addPessoa("Pedro", 12);
         } catch (PessoaException e) {
-            System.err.println("Não consegui adicionar a pessoa Teste.");
+            System.err.println("Não consegui adicionar a pessoa Pedro.");
             System.err.println(e.getMessage());
         }
 
         try {
-            Pessoa u = pessoaDAO.getPessoa("lala", 12);
+            Pessoa u = pessoaDAO.getPessoa("Jorge", 12);
             System.out.println(u.getNome());
         } catch (PessoaException e) {
-            System.err.println("Não consegui recuperar a pessoa lala.");
+            System.err.println("Não consegui recuperar a pessoa Jorge.");
             System.err.println(e.getMessage());
         }
 
         try {
-            Pessoa u = pessoaDAO.getPessoa("Teste", 12);
+            Pessoa u = pessoaDAO.getPessoa("Pedro", 12);
             System.out.printf("A pessoa %s existe e sua idade é %d", u.getNome(),u.getIdade());
         } catch (PessoaException e) {
-            System.err.println("Não consegui recuperar a pessoa Teste.");
+            System.err.println("Não consegui recuperar a pessoa Pedro.");
             System.err.println(e.getMessage());
         }
     }
