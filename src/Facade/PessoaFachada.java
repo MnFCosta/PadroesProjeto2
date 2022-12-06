@@ -6,8 +6,8 @@ public class PessoaFachada {
     private Pessoa crianca;
 
     public PessoaFachada() {
-        adulto = new Circle();
-        adolescente = new Rectangle();
+        adulto = new Adulto();
+        adolescente = new Adolescente();
         crianca = new Crianca();
     }
 

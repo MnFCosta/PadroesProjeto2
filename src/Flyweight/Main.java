@@ -8,12 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         Lista aaa = new Lista();
-//        Nome jorge = new Nome("Jorge");
-//        Nome lucas = new Nome("Lucas");
-//        Nome segio = new Nome("Sergio");
         aaa.add(NomeFactory.get("Jorge"));
         aaa.add(NomeFactory.get("Lucas"));
         aaa.add(NomeFactory.get("Sérgio"));
+        aaa.add(NomeFactory.get("Jorge"));
         System.out.println(aaa.getNome());
 
     }
